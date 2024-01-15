@@ -1,0 +1,43 @@
+.input-wrapper{
+    margin-top: 30px;
+    background-color: white;
+    width: 784px;
+    border-radius: 10px;
+height: 4rem;
+padding: 0 15px;
+box-shadow: 0px 0px 5px 1px #00000033;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 20px; 
+    width: 100%;
+    margin-left: 15px;
+    color: #787878;
+}
+
+input:focus{
+    outline: none;
+}
+
+#search-icon,
+#search-close{
+    width: 25px;
+height: 25.5px;
+flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .input-wrapper{
+        display: flex;
+        width: 90%;
+    align-items: center;
+    }
+
+}
