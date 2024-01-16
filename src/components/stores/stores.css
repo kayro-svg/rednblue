@@ -34,12 +34,12 @@
     margin-top: 125px;
 }
 
-.work_card {
+.store_card {
     position: relative;
     display: flex;
     width: 250px;
     flex-direction: column;
-    background-image: url(../../assets/card-bg.png);
+    background-image: url("../../assets/card-bg.jpg");
     align-items: center;
     justify-content: space-between;
     overflow: hidden; 
@@ -128,12 +128,12 @@ font-size: 15px;
 }
 
 
-.work_img {
+.store_img {
     width: 100px;
     margin-bottom: 1.5rem;
 }
 
-.work_title {
+.store_title {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: var(--mb-0-5);
@@ -148,7 +148,7 @@ font-size: 15px;
     font-family: Lato, sans-serif;
     color: var(--Additional-dark, #3B5266);
 }
-.work_button {
+.store_button {
     font-size: 17px;
     font-weight: 700;
     margin-bottom: var(--mb-0-5);
@@ -159,12 +159,12 @@ font-size: 15px;
     column-gap: 0.25rem;
 }
 
-.work_button-icon {
+.store_button-icon{
     font-size: 2rem;
     transform: 0.4s;
 }
 
-.work_button:hover .work_button-icon {
+.store_button:hover .store_button-icon {
     transform: translateX(0.30rem);
 }
 
@@ -208,23 +208,23 @@ font-size: 15px;
         gap: 1rem;
     }
 
-    .work_card {
+    .store_card {
     position: relative;
     display: flex;
     width: 190px;
     flex-direction: column;
-    background-image: url(http://localhost:3001/static/media/card-bg.384a6789f4f187d94d9f.png);
+    background-image: url("../../assets/card-bg.jpg");
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
     }
 
-    .work_img {
+    .store_img {
         margin-bottom: 3rem;
         width: 85px;
     }
 
-    .work_title {
+    .store_title {
         margin-bottom: 0.25rem;
         justify-content: center;
         display: flex;
@@ -233,7 +233,7 @@ font-size: 15px;
     .brand_description{
         display: none;
     }
-    .work_button{
+    .store_button{
         display: flex;
         justify-content: center;
         display: flex;
@@ -304,12 +304,12 @@ font-size: 15px;
 /* For small devices */
 @media screen and (max-width: 400px) {
     
-    .work_card {
+    .store_card{
         position: relative;
         display: flex;
         width: 170px;
         flex-direction: column;
-        background-image: url(http://localhost:3001/static/media/card-bg.384a6789f4f187d94d9f.png);
+        background-image: url("../../assets/card-bg.jpg");
         align-items: center;
         justify-content: space-between;
         overflow: hidden;

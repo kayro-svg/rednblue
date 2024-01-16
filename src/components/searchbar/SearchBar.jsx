@@ -2,19 +2,26 @@ import React, { useState, useEffect } from 'react';
 import "./searchbar.css";
 import { CiSearch } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
-import { projectsData } from '../work/Data';
+import { projectsData } from '../stores/Data';
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import Skeleton from 'react-loading-skeleton';
 
 const SearchBar = () => {
+  // Estado para gestionar el término de búsqueda
   const [searchTerm, setSearchTerm] = useState("");
+  // Estado para controlar la cantidad de elementos a mostrar
   const [itemsToShow, setItemsToShow] = useState(3);
+  // Número total de elementos disponibles
   const totalItems = projectsData.length;
+  // Estado para indicar si se está cargando información
   const [loading, setLoading] = useState(false);
+  // Estado para almacenar los proyectos visibles
   const [visibleProjects, setVisibleProjects] = useState([]);
+  // Estado para gestionar el texto del marcador de posición en la barra de búsqueda
   const [placeholder, setPlaceholder] = useState("Buscar tiendas");
 
+  // Función para limpiar la búsqueda y restablecer el marcador de posición
   const handleClearSearch = () => {
     setSearchTerm("");
     setPlaceholder("Buscar tiendas");
@@ -23,8 +30,11 @@ const SearchBar = () => {
   useEffect(() => {
     let timeoutId;
 
+    // Activar el indicador de carga
     setLoading(true);
+    // Establecer un temporizador para simular la búsqueda asíncrona
     timeoutId = setTimeout(() => {
+      // Filtrar proyectos en base al término de búsqueda
       const filteredProjects = projectsData.filter((project) => {
         if (searchTerm === "") {
           return project;
@@ -34,19 +44,23 @@ const SearchBar = () => {
         return null;
       });
 
+      // Establecer los proyectos visibles y desactivar el indicador de carga
       setVisibleProjects(filteredProjects.slice(0, itemsToShow * 4));
       setLoading(false);
     }, 500);
 
+    // Limpiar el temporizador en caso de que el componente se desmonte antes de que termine
     return () => clearTimeout(timeoutId);
   }, [searchTerm, itemsToShow]);
 
+  // Función para cargar más elementos
   const mostrarMas = () => {
     setItemsToShow(prevItems => prevItems + 1);
   };
 
   return (
     <>
+      {/* Barra de búsqueda */}
       <div className="input-wrapper">
         <CiSearch id="search-icon" />
         <input
@@ -61,8 +75,10 @@ const SearchBar = () => {
         <IoCloseOutline id="search-close" onClick={handleClearSearch} />
       </div>
 
+      {/* Contenedor de proyectos */}
       <div className="work_container container grid">
         {loading ? (
+          // Mostrar esqueletos mientras se carga la información
           Array.from({ length: itemsToShow * 4 }).map((_, index) => (
             <div className='work_card_skeleton' key={index}>
               <div className="card_filters_skeleton">
@@ -80,22 +96,23 @@ const SearchBar = () => {
             </div>
           ))
         ) : (
+          // Mostrar proyectos reales una vez cargados
           visibleProjects.map((project) => (
-            <div className='work_card' key={project.id}>
+            <div className='store_card' key={project.id}>
               <div className="card_filters">
                 {project.categories.map((category, index) => (
                   <a className="filter_item" key={index}>{category.trim()}</a>
                 ))}
               </div>
-              <img src={project.image} alt='' className='work_img' />
+              <img src={project.image} alt='' className='store_img' />
               <p className="hover_text">{project.hoverText}
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus qui dicta ipsum laudantium molestias.
               </p>
               <div className="card_description">
-                <h3 className="work_title">{project.title}</h3>
+                <h3 className="store_title">{project.title}</h3>
                 <p className="brand_description">{project.description}</p>
-                <a href={project.url} target='_blank' className="work_button">
-                  Ver info <IoIosArrowForward className="work_button-icon" />
+                <a href={project.url} target='_blank' className="store_button">
+                  Ver info <IoIosArrowForward className="store_button-icon" />
                 </a>
               </div>
             </div>
@@ -103,6 +120,7 @@ const SearchBar = () => {
         )}
       </div>
 
+      {/* Botón para cargar más proyectos */}
       {itemsToShow * 4 < totalItems && (
         <div className="ver_mas">
           <a className="ver_mas_buttom" onClick={mostrarMas}>

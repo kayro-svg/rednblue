@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
-import "./work.css"
-import Works from './Works'
-import { projectsData } from './Data';
 import SearchBar from '../searchbar/SearchBar';
+import "./stores.css"
 
 const Work = () => {
 
@@ -10,11 +8,7 @@ const Work = () => {
 
     return (
         <section className="tiendas section" id="tiendas">
-
           <SearchBar/>
-
-          
-
         </section>
     )
 }
