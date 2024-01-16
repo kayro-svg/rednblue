@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./cover.css";
-import { SearchBar } from '../searchbar/SearchBar';
+import SearchBar from '../searchbar/SearchBar';
+import { projectsData } from '../work/Data';
 
 export default function Cover() {
+
   return (
     <section className="home cover-section" id="home">
 
@@ -24,9 +26,6 @@ export default function Cover() {
           <div className="mobile-image"></div>
             <h1 className="first-title">Tiendas con las que trabajamos</h1>
             <p className="home_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea quidem perspiciatis pariatur fuga nemo similique, neque, quam atque quasi aut laborum temporibus quisquam vel cumque magnam corrupti.</p>
-
-            <SearchBar />
-
           </div>
         </div>
       </div>

@@ -13,6 +13,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: -35px;
 }
 
 .footer_wrapper {
@@ -126,11 +127,11 @@
 }
 
 
-.scroollup {
-    display: flex;
-    align-items: center;
+.scrollup {
+  
     color: var(--container-color);
     width: 45px;
+    cursor: pointer;
 }
 
 .footer_middle {
@@ -275,6 +276,7 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        cursor: pointer;
     }
 
     .footer_social {
@@ -428,6 +430,7 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        cursor: pointer;
     }
 
     .footer_social {
@@ -568,6 +571,7 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        cursor: pointer;
     }
 
     .footer_social {

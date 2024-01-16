@@ -124,7 +124,10 @@ img{
 
 /* Reusable CSS Classes */
 .section{
-  padding: 6rem 0 2rem;
+  padding: 0rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section_title{
