@@ -22,27 +22,27 @@ function Navbar() {
             
                 <ul className={active}>
                     <li className="nav__item">
-                        <a href="#" className="nav__link">
+                        <a href="https://rednbluepty.com/#:~:text=Portal-,Intro,-Como%20crear%20cuenta" className="nav__link" target="_blank"> 
                             Nosotros
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="#" className="nav__link">
+                        <a href="https://rednbluepty.com/#:~:text=Conocer%20m%C3%A1s-,NUESTROS%20SERVICIOS,-Compras%20por%20internet" className="nav__link" target="_blank">
                             Servicios
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="#" className="nav__link">
+                        <a href="https://rednbluepty.com/#:~:text=No%20dudes%20en%20escribirnos" className="nav__link" target="_blank">
                             Conáctanos
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="#" className="nav__link">
+                        <a href="https://portal.rednbluepty.com/registrate" className="nav__link" target="_blank">
                             Regístrate
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href="#" className="nav__link">
+                        <a href="#" className="nav__link" target="_blank">
                             Prácticas RNB
                         </a>
                     </li>

@@ -10,7 +10,7 @@ export const projectsData = [
         title: "Apple",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Computadoras', 'Teléfonos', 'Tecnología'],
-        url: "https://zonasurautopartes.com/store/",
+        url: "https://www.apple.com/",
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ export const projectsData = [
         title: "Nike",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Zapatillas', 'Deporte', 'Estilo', 'Ropa', 'Atlético'],
-        url: "https://legionextranjera.es/",
+        url: "https://www.nike.com/xl/",
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ export const projectsData = [
         title: "Amazon",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Estilo de Vida', 'Tecnología', 'Teléfonos'],
-        url: "https://esquematizate.com/",
+        url: "https://www.amazon.com/",
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ export const projectsData = [
         title: "Adidas",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories:['Zapatillas', 'Deporte', 'Ropa', 'Atlético'],
-        url: "https://kayro-svg.github.io/Landing-Page-JS-PHP-HTML-CSS/",
+        url: "https://www.latin-america.adidas.com/storefinder#/",
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ export const projectsData = [
         title: "Wallmart",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Estilo de Vida', 'Tecnología','Ropa'],
-        url: "https://foto-formas.webflow.io/",
+        url: "https://www.walmart.com/",
     },
     {
         id: 6,
@@ -50,7 +50,7 @@ export const projectsData = [
         title: "Aliexpress",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Computadoras', 'Tecnología', 'Estilo de Vida'],
-        url: "https://roxett.com.mx/",
+        url: "https://es.aliexpress.com/",
     },
     {
         id: 7,
@@ -58,7 +58,7 @@ export const projectsData = [
         title: "Ebay",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Telefonos', 'Tecnología', 'Computadoras'],
-        url: "https://roxett.com.mx/",
+        url: "https://www.ebay.es/",
     },
     {
         id: 8,
@@ -66,7 +66,7 @@ export const projectsData = [
         title: "Shein",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Ropa', 'Zapatillas', 'Estilo de Vida'],
-        url: "https://roxett.com.mx/",
+        url: "https://es.shein.com/",
     },
     {
         id: 9,
@@ -74,7 +74,7 @@ export const projectsData = [
         title: "Wish",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Estilo de Vida'],
-        url: "https://roxett.com.mx/",
+        url: "https://www.wish.com/es",
     },
     {
         id: 10,
@@ -82,7 +82,7 @@ export const projectsData = [
         title: "Converse",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Ropa', 'Zapatillas'],
-        url: "https://roxett.com.mx/",
+        url: "https://www.converse.com/es",
     },
     {
         id: 11,
@@ -90,7 +90,7 @@ export const projectsData = [
         title: "Converse",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Ropa', 'Zapatillas'],
-        url: "https://roxett.com.mx/",
+        url: "https://www.converse.com/es",
     },
     {
         id: 12,
@@ -98,7 +98,7 @@ export const projectsData = [
         title: "Converse",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Ropa', 'Zapatillas'],
-        url: "https://roxett.com.mx/",
+        url: "https://www.converse.com/es",
     },
     {
         id: 13,
@@ -106,7 +106,7 @@ export const projectsData = [
         title: "Converse",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Ropa', 'Zapatillas'],
-        url: "https://roxett.com.mx/",
+        url: "https://www.converse.com/es",
     },
     {
         id: 14,
@@ -114,7 +114,7 @@ export const projectsData = [
         title: "Converse",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Ropa', 'Zapatillas'],
-        url: "https://roxett.com.mx/",
+        url: "https://www.converse.com/es",
     },
     {
         id: 15,
@@ -122,7 +122,7 @@ export const projectsData = [
         title: "Converse",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Ropa', 'Zapatillas'],
-        url: "https://roxett.com.mx/",
+        url: "https://www.converse.com/es",
     },
     {
         id: 16,
@@ -130,7 +130,7 @@ export const projectsData = [
         title: "Converse",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         categories: ['Ropa', 'Zapatillas'],
-        url: "https://roxett.com.mx/",
+        url: "https://www.converse.com/es",
     }
 ];
 

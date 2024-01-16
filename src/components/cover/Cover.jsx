@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import "./cover.css";
-import SearchBar from '../searchbar/SearchBar';
-import { projectsData } from '../work/Data';
 
 export default function Cover() {
 

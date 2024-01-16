@@ -90,22 +90,22 @@ const Footer = () => {
                         <div className="footer-list-left">
                             <ul>
                                 <li className="footer_li">
-                                    <a href="#about" className="footer_link">Nosotros</a>
+                                    <a href="https://rednbluepty.com/#:~:text=De%20trayectoria-,NOSOTROS,-Con%C3%B3cenos%20un%20poco" className="footer_link" target='_blank'>Nosotros</a>
                                 </li>
 
                                 <li className="footer_li">
-                                    <a href="#portfolio" className="footer_link">Servicios</a>
+                                    <a href="https://rednbluepty.com/#:~:text=NUESTROS-,SERVICIOS,-Compras%20por%20internet" className="footer_link"  target='_blank'>Servicios</a>
                                 </li>
 
                                 <li className="footer_li">
-                                    <a href="#testimonials" className="footer_link">Contáctanos</a>
+                                    <a href="https://rednbluepty.com/#:~:text=No%20dudes%20en-,escribirnos,-%C2%BFTienes%20alguna%20duda" className="footer_link"  target='_blank'>Contáctanos</a>
                                 </li>
 
                                 <li className="footer_li">
-                                    <a href="#" className="footer_link">Regístrate</a>
+                                    <a href="https://portal.rednbluepty.com/registrate" className="footer_link"  target='_blank'>Regístrate</a>
                                 </li>
                                 <li className="footer_li">
-                                    <a href="#" className="footer_link">Portal</a>
+                                    <a href="https://portal.rednbluepty.com/" className="footer_link"  target='_blank'>Portal</a>
                                 </li>
 
                             </ul>
@@ -115,19 +115,19 @@ const Footer = () => {
                             <ul className="footer-list-right">
 
                                 <li className="footer_li">
-                                    <a href="#" className="footer_link">Preguntas Frecuentes</a>
+                                    <a href="https://rednbluepty.com/preguntas-frecuentes" className="footer_link"  target='_blank'>Preguntas Frecuentes</a>
                                 </li>
 
                                 <li className="footer_li">
-                                    <a href="#" className="footer_link">Ventajas de comprar por internet</a>
+                                    <a href="#" className="footer_link"  target='_blank'>Ventajas de comprar por internet</a>
                                 </li>
 
                                 <li className="footer_li">
-                                    <a href="#" className="footer_link">RednBlue Logistics</a>
+                                    <a href="#" className="footer_link"  target='_blank'>RednBlue Logistics</a>
                                 </li>
 
                                 <li className="footer_li">
-                                    <a href="#" className="footer_link">Soporte técnico</a>
+                                    <a href="#" className="footer_link"  target='_blank'>Soporte técnico</a>
                                 </li>
 
                             </ul>
