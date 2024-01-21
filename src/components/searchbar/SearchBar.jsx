@@ -8,20 +8,25 @@ import { IoIosArrowDown } from "react-icons/io";
 import Skeleton from 'react-loading-skeleton';
 
 const SearchBar = () => {
-  // Estado para gestionar el término de búsqueda
+  // Estado para gestionar el término de búsqueda o texto que se ingrese en el input
   const [searchTerm, setSearchTerm] = useState("");
+
   // Estado para controlar la cantidad de elementos a mostrar
   const [itemsToShow, setItemsToShow] = useState(3);
+
   // Número total de elementos disponibles
   const totalItems = projectsData.length;
+
   // Estado para indicar si se está cargando información
   const [loading, setLoading] = useState(false);
+
   // Estado para almacenar los proyectos visibles
   const [visibleProjects, setVisibleProjects] = useState([]);
+
   // Estado para gestionar el texto del marcador de posición en la barra de búsqueda
   const [placeholder, setPlaceholder] = useState("Buscar tiendas");
 
-  // Función para limpiar la búsqueda y restablecer el marcador de posición
+  // Función para limpiar la búsqueda y restablecer el marcador de posición a spaceholder
   const handleClearSearch = () => {
     setSearchTerm("");
     setPlaceholder("Buscar tiendas");
@@ -30,8 +35,9 @@ const SearchBar = () => {
   useEffect(() => {
     let timeoutId;
 
-    // Activar el indicador de carga
+    // Activa el indicador de carga
     setLoading(true);
+
     // Establecer un temporizador para simular la búsqueda asíncrona
     timeoutId = setTimeout(() => {
       // Filtrar proyectos en base al término de búsqueda
@@ -44,7 +50,7 @@ const SearchBar = () => {
         return null;
       });
 
-      // Establecer los proyectos visibles y desactivar el indicador de carga
+      // Establece las tiendas (stores) visibles y desactiva el indicador de carga
       setVisibleProjects(filteredProjects.slice(0, itemsToShow * 4));
       setLoading(false);
     }, 500);
@@ -60,7 +66,6 @@ const SearchBar = () => {
 
   return (
     <>
-      {/* Barra de búsqueda */}
       <div className="input-wrapper">
         <CiSearch id="search-icon" />
         <input
@@ -75,7 +80,6 @@ const SearchBar = () => {
         <IoCloseOutline id="search-close" onClick={handleClearSearch} />
       </div>
 
-      {/* Contenedor de proyectos */}
       <div className="work_container container grid">
         {loading ? (
           // Mostrar esqueletos mientras se carga la información
@@ -96,7 +100,7 @@ const SearchBar = () => {
             </div>
           ))
         ) : (
-          // Mostrar proyectos reales una vez cargados
+          // Mostrar las stores reales una vez cargado
           visibleProjects.map((project) => (
             <div className='store_card' key={project.id}>
               <div className="card_filters">
